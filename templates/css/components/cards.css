@@ -5,13 +5,9 @@
     min-height: 200px;
 }
 
-.container {
-    margin-top: 20px;
-}
-
 .question_box {
     padding: 5px;
-    margin: 10px;
+    margin: 35px 10px 10px 10px;
     border: 1px solid black;
     min-height: 100px;
     max-height: 100px;

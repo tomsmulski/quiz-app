@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="./templates/images/favicon.ico">
     <link rel="stylesheet" href="../templates/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Quiz App</title>
@@ -14,7 +15,21 @@
     <header class="ts-center">
         <h1>CREATE</h1>
     </header>
+    <main>
 
+        <div class="container container_form">
+            <form action="" method="post">
+                <label for="add_question"><strong>Add Question</strong>*</label>
+                <textarea class="create_form_textarea" name="add_question" id="add_question" rows="10" required></textarea>
+                <label for="add_answer"><strong>Add Answer</strong>*</label>
+                <textarea class="create_form_textarea" name="add_answer" id="add_answer" rows="10" required></textarea>
+                <label title="Tags divided by Comma" for="add_tags"><strong>Add Tags</strong>*</label>
+                <input class="create_form_input_text" type="text" name="add_tags" id="add_tags" required>
+                <button class="create_form_button_submit" type="submit">SUBMIT</button>
+            </form>
+        </div>
+
+    </main>
     <footer>
         <nav>
             <ul class="ts-list-no-style">
