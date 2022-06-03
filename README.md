@@ -1,4 +1,4 @@
-# quiz-app
+# Quiz-App
 
 
 ## LIVE PREVIEW
