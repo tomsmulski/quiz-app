@@ -1,23 +1,4 @@
-function cards() {
-
-    const questions = [{
-        title: "Frage 1",
-        question: "Wie wo was warum.",
-        answer: "weil es so ist",
-        tag: ["tag1", "tag2", "tag3", "tag4"]
-    }, {
-        title: "Frage 2",
-        question: "Ich mach einfach",
-        answer: "genau richtig so xD",
-        tag: ["tag10", "tag20", "tag30", "tag40"]
-    }, {
-        title: "Frage 3",
-        question: "Alles gut ?",
-        answer: "jaaaaaa",
-        tag: ["tag100", "tag200", "tag300", "tag400"]
-    }];
-
-
+function cards(questions) {
 
     questions.forEach(question => {
 
@@ -30,6 +11,7 @@ function cards() {
 
         const element_i = document.createElement("i");
         element_i.setAttribute("data-js", "bookmark");
+        element_i.setAttribute("data-id", question.id);
         element_i.classList.add("bookmark", "fa-solid", "fa-bookmark", "fa-2x");
 
         element_section.append(element_i);
