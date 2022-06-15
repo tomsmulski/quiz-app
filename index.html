@@ -3,26 +3,85 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./templates/css/style.css">
+    <link rel="icon" type="image/ico" href="./templates/images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./templates/css/style.css">
+    <script type="module" src="./index.js" defer></script>
     <title>Quiz App</title>
 </head>
 
 <body>
-    <header class="ts-center">
-        <h1>Quiz APP</h1>
+
+    <header class="center">
+        <h1 data-js="title">QUIZ-APP</h1>
     </header>
 
+    <main data-js="page_home" class="container page">
+
+    </main>
+
+    <main data-js="page_bookmark" class="container page">
+
+    </main>
+
+    <main data-js="page_create" class="container page">
+        <form class="container_form" action="" method="post" aria-labelledby="create_question">
+            <label for="add_question"><strong>Add Question</strong>*</label>
+            <textarea class="create_form_textarea" name="add_question" id="add_question" rows="10" required></textarea>
+            <label for="add_answer"><strong>Add Answer</strong>*</label>
+            <textarea class="create_form_textarea" name="add_answer" id="add_answer" rows="10" required></textarea>
+            <label title="Tags divided by Comma" for="add_tags"><strong>Add Tags</strong>*</label>
+            <input class="create_form_input_text" type="text" name="add_tags" id="add_tags" required>
+            <button class="create_form_button_submit" type="submit">SUBMIT</button>
+        </form>
+    </main>
+
+    <main data-js="page_profil" data-title="PROFIL" class="container page page_current">
+
+        <section>
+            <div class="container_profil">
+                <img class="round image_size" src=".\templates\images\profil.png" alt="">
+                <h2 class="profil_name">Thomas Smulski</h2>
+            </div>
+            <article>
+                <p class="center padding-top-bottom-24">Ja was soll ich sagen, Front-End Katastrope xD</p>
+            </article>
+            <article>
+                <h3 class="center">My Skills</h3>
+                <ul class="list-no-style tags">
+                    <li>C#</li>
+                    <li>Lua Script</li>
+                    <li>SQL</li>
+                </ul>
+                <ul class="list-no-style tags">
+                    <li>PHP</li>
+                    <li>Webserver IIS</li>
+                    <li>Win AD</li>
+                </ul>
+                <ul class="list-no-style tags">
+                    <li>VisualSVN</li>
+                    <li>Hyper-V</li>
+                    <li>VirtualBox</li>
+                </ul>
+                <ul class="list-no-style tags">
+                    <li>--------</li>
+                    <li>BACK END</li>
+                    <li>--------</li>
+                </ul>
+            </article>
+        </section>
+
+    </main>
 
     <footer>
         <nav>
-            <ul>
-                <li><a class="button" href=""><i class="fa-solid fa-house fa-3x"></i></a></li>
-                <li><a class="button" href=""><i class="fa-solid fa-bookmark fa-3x"></i></a></li>
-                <li><a class="button" href=""><i class="fa-regular fa-square-plus fa-3x"></i></a></li>
-                <li><a class="button" href=""><i class="fa-solid fa-user fa-3x"></i></a></li>
+            <ul class="list-no-style">
+                <li><a class="nav_button" data-title="QUIZ-APP" data-link="page_home" data-js="nav_link"><i class="fa-solid fa-house fa-3x"></i></a></li>
+                <li><a class="nav_button" data-title="BOOKMARK" data-link="page_bookmark" data-js="nav_link"><i class="fa-solid fa-bookmark fa-3x color-white"></i></a></li>
+                <li><a class="nav_button" data-title="CREATE" data-link="page_create" data-js="nav_link"><i class="fa-solid fa-circle-plus fa-3x color-white"></i></a></li>
+                <li><a class="nav_button" data-title="PROFIL" data-link="page_profil" data-js="nav_link"><i class="fa-solid fa-user fa-3x color-white"></i></a></li>
             </ul>
         </nav>
     </footer>

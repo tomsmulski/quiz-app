@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,6 +15,62 @@ a {
     text-decoration: none;
 }
 
-.ts-center {
+.container {
+    margin-top: 20px;
+    margin-bottom: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.page {
+    display: none;
+}
+
+.page_current {
+    display: block;
+}
+
+.padding-top-8 {
+    padding-top: 8px;
+}
+
+.padding-top-bottom-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.list-no-style {
+    list-style: none;
+}
+
+.list-inline {
+    display: inline
+}
+
+.font-small {
+    font-size: 12px;
+}
+
+.font-medium {
+    font-size: 14px;
+}
+
+.center {
     text-align: center;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-black {
+    color: black;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.image_size {
+    width: 60%;
 }

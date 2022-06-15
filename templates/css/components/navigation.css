@@ -1,21 +1,19 @@
-nav {
+nav ul {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 nav ul li {
-    display: inline-flex;
+    width: 100%;
 }
 
-.button {
+.nav_button {
     padding-top: 5px;
-    width: 60px;
-    height: 60px;
+    padding-bottom: 5px;
     display: block;
     color: black;
     text-align: center;
-    background-color: white;
+    background-color: aqua;
     border: 1px solid black;
 }

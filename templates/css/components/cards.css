@@ -1,0 +1,60 @@
+.cards {
+    position: relative;
+    margin: 10px;
+    border: 1px solid black;
+    min-width: 300px;
+    min-height: 200px;
+}
+
+.question_box {
+    padding: 5px;
+    margin: 35px 10px 10px 10px;
+    border: 1px solid black;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.answer_box-hidden {
+    display: none;
+}
+
+.answer_box-show {
+    display: block;
+}
+
+.answer_box {
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black;
+    min-height: 70px;
+    max-height: 70px;
+}
+
+.button_show_answer {
+    margin: 0 auto;
+    display: block;
+    background-color: rebeccapurple;
+    color: white;
+    padding: 5px;
+}
+
+.bookmark {
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    right: 10px;
+}
+
+.bookmark_activ {
+    color: brown;
+}
+
+.title_stlye {
+    float: left;
+    margin-left: 10px;
+}
+
+.tags {
+    display: flex;
+    justify-content: space-around;
+}
