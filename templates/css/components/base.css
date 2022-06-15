@@ -1,76 +1,76 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Verdana, sans-serif;
-    line-height: 1.5;
+  font-family: Verdana, sans-serif;
+  line-height: 1.5;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
-    margin-top: 20px;
-    margin-bottom: 30%;
-    margin-left: 10px;
-    margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .page {
-    display: none;
+  display: none;
 }
 
 .page_current {
-    display: block;
+  display: block;
 }
 
 .padding-top-8 {
-    padding-top: 8px;
+  padding-top: 8px;
 }
 
 .padding-top-bottom-24 {
-    padding-top: 24px;
-    padding-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .list-no-style {
-    list-style: none;
+  list-style: none;
 }
 
 .list-inline {
-    display: inline
+  display: inline;
 }
 
 .font-small {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .font-medium {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .color-white {
-    color: white;
+  color: white;
 }
 
 .color-black {
-    color: black;
+  color: black;
 }
 
 .round {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .image_size {
-    width: 60%;
+  width: 60%;
 }

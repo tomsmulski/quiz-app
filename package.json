@@ -1,23 +1,32 @@
 {
-    "name": "quiz-app",
-    "version": "1.0.0",
-    "description": "[QUIZ APP Live Preview](https://quiz.smulski.de)",
-    "main": "index.js",
-    "scripts": {
-        "htmlhint": "npx htmlhint \"**/*.html\"",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/tomsmulski/quiz-app.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/tomsmulski/quiz-app/issues"
-    },
-    "homepage": "https://github.com/tomsmulski/quiz-app#readme",
-    "devDependencies": {
-        "htmlhint": "^1.1.4"
-    }
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "[QUIZ APP Live Preview](https://quiz.smulski.de)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "htmlhint": "npx htmlhint \"**/*.html\"",
+    "prettier:check": "npx prettier --check .",
+    "prettier:write": "npx prettier --write .",
+    "stylelint": "npx stylelint \"**/*.css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomsmulski/quiz-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomsmulski/quiz-app/issues"
+  },
+  "homepage": "https://github.com/tomsmulski/quiz-app#readme",
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "htmlhint": "^1.1.4",
+    "prettier": "^2.7.0",
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^26.0.0"
+  }
 }

@@ -1,44 +1,32 @@
 function navigation() {
+  const pages = document.querySelectorAll('.page');
+  const navLinks = document.querySelectorAll('[data-js=nav_link]');
+  const navButtons = document.querySelectorAll('.nav_button');
+  const title = document.querySelector('[data-js=title]');
 
-    const pages = document.querySelectorAll(".page");
-    const navLinks = document.querySelectorAll("[data-js=nav_link]");
-    const navButtons = document.querySelectorAll(".nav_button");
-    const title = document.querySelector("[data-js=title]");
+  navLinks.forEach(navLink => {
+    navLink.addEventListener('click', () => {
+      const selectedPage = document.querySelector(
+        `[data-js=${navLink.dataset.link}]`
+      );
 
-    navLinks.forEach((navLink) => {
+      //const selectedButton = document.querySelector('.nav_button');
 
-        navLink.addEventListener("click", () => {
+      pages.forEach(page => {
+        page.classList.remove('page_current');
+      });
 
-            const selectedPage = document.querySelector(
-                `[data-js=${navLink.dataset.link}]`
-            );
+      navButtons.forEach(button => {
+        button.children[0].classList.add('color-white');
+      });
 
-            const selectedButton = document.querySelector(".nav_button");
+      navLink.children[0].classList.remove('color-white');
 
-            pages.forEach((page) => {
-                page.classList.remove("page_current");
-            });
+      selectedPage.classList.add('page_current');
 
-            navButtons.forEach((button) => {
-                button.children[0].classList.add("color-white");
-            });
-
-            navLink.children[0].classList.remove("color-white");
-
-            selectedPage.classList.add("page_current");
-
-            title.textContent = navLink.dataset.title;
-
-        });
-
-
-
+      title.textContent = navLink.dataset.title;
     });
-
-
-
-
+  });
 }
-
 
 export { navigation };
