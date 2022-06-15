@@ -1,0 +1,7 @@
+.container_profil {
+    display: flex;
+}
+
+.profil_name {
+    margin-top: 15%;
+}

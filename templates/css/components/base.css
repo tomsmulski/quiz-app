@@ -17,36 +17,60 @@ a {
 
 .container {
     margin-top: 20px;
+    margin-bottom: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.ts-padding-top-8 {
+.page {
+    display: none;
+}
+
+.page_current {
+    display: block;
+}
+
+.padding-top-8 {
     padding-top: 8px;
 }
 
-.ts-list-no-style {
+.padding-top-bottom-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.list-no-style {
     list-style: none;
 }
 
-.ts-list-inline {
+.list-inline {
     display: inline
 }
 
-.ts-font-small {
+.font-small {
     font-size: 12px;
 }
 
-.ts-font-medium {
+.font-medium {
     font-size: 14px;
 }
 
-.ts-center {
+.center {
     text-align: center;
 }
 
-.ts-color-white {
+.color-white {
     color: white;
 }
 
-.ts-color-black {
+.color-black {
     color: black;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.image_size {
+    width: 60%;
 }
