@@ -3,4 +3,4 @@
 
 ## LIVE PREVIEW
 
-[QUIZ APP Live Preview](https://quizapp.smulski.de)
+[QUIZ APP Live Preview](https://quiz.smulski.de)
